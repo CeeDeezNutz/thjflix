@@ -1,67 +1,107 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>THJFLIX | Home</title>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/png" href="flixfavicon.png"/>
+    <title>THJFLIX | Home</title>
+
+
+  <meta content="THJFLIX - Free Movies and TV Shows" property="og:title">
+
+<meta content="Stop paying for subscriptions like Netflix or Hulu and start using THJFLIX.
+
+THJFLIX is a free online alternative to streaming services. Using advanced proxies, you can watch anything you want, anywhere you want." property="og:description">
+
+<meta content='https://thjflix.com/thjflixbanner.png' property='og:image'>
+
+<link type="application/json+oembed" href="https://thjflix.com/oembed.json" />
+
+<meta name="theme-color" content="#DB1A28">
+
+<meta name="twitter:card" content="summary_large_image">
+
+  
 </head>
 <body>
-	<section>
-		<header>
-			<a href="#" class="logo"><img src="logo.png"></a>
-			<i class="fa-solid fa-magnifying-glass"></i>
-		</header>
+    <header class="showcase">
+        <div class="showcase-top">
+            <img src="logo.png" alt="Netflix Logo">
+            
+            <a href="#thjflixguide" class="btn btn-rounded">Start Watching</a>
+        </div>
+        <div class="showcase-content">
+            <h1>THJFLIX</h1>
+            <h3>Free Movies, TV Shows, and More</h3>
+            <p>Ready to watch? Click <u><a href="#thjflixguide">here</a></u> to get started</p>
+            <input type="text" id="text" placeholder="Enter Movie ID Here...">
+            <a type="button" id="btn" onClick="javascript: window.open('http://notpiracy.org/?movie=' + document.getElementById('text').value);" class="btn btn-lg">WATCH ></a>
+        </div>
+    </header>
 
-		<div class="imgScroll">
-			<div>
-        <!-- wednesday -->
-				<a href="https://drive.google.com/drive/folders/1LuP6uY2rBAJntJNAA0OH633j7LyK0D-C?usp=share_link"><img src="img1.jpg"></a>
-        <!-- avatar; the way of water -->
-				<a href="https://drive.google.com/file/d/1QqjIexeN-9bwoD7od5LqoZ6nKC-dacBt/view?usp=share_link"><img src="img2.jpg"></a>
-        <!-- the last of us -->
-				<a href="https://drive.google.com/drive/folders/1cRi2VWXA7eJIobzYHk_rwqKBV0ILV2WH?usp=share_link"><img src="img3.jpg"></a>
-        <!-- advengers endgame -->
-				<a href="https://drive.google.com/file/d/16PQbXSXY3E9EDZmkpxlti04r7PZZUoCW/view?usp=share_link"><img src="img4.jpg"></a>
-        <!-- black panther wakanda forever -->
-				<a href="https://drive.google.com/file/d/18RBLHwqlat4BqHVYd7vXSbmicWHSLrUa/view?usp=share_link"><img src="img5.jpg"></a>
-        <!-- spiderman; into the spiderverse -->
-				<a href="https://drive.google.com/file/d/1X1iwq3djL9Vdgc6M6mLh0XF1gRiQtLx_/view?usp=share_link"><img src="img6.jpg"></a>
-        <!-- creed -->
-				<a href="https://drive.google.com/file/d/1Z4EcGzNZysoPSWUtyWcKfF-PlmRlfAaE/view?usp=share_link"><img src="img7.jpg"></a>
-        <!-- creed 2 -->
-				<a href="https://drive.google.com/file/d/1k910uTbP_zg88uEfK86vwwrrvUtIgD-t/view?usp=share_link"><img src="img8.jpg"></a>
-        <!-- cars 2 -->
-				<a href="https://drive.google.com/file/d/1heXBRzQQeRHQFodKwv1u0p1YbCHNpF2Y/view?usp=share_link"><img src="img9.jpg"></a>
-			</div>
-			<div>
-				<!-- wednesday -->
-				<a href="https://drive.google.com/drive/folders/1LuP6uY2rBAJntJNAA0OH633j7LyK0D-C?usp=share_link"><img src="img1.jpg"></a>
-        <!-- avatar; the way of water -->
-				<a href="https://drive.google.com/file/d/1QqjIexeN-9bwoD7od5LqoZ6nKC-dacBt/view?usp=share_link"><img src="img2.jpg"></a>
-        <!-- the last of us -->
-				<a href="https://drive.google.com/drive/folders/1cRi2VWXA7eJIobzYHk_rwqKBV0ILV2WH?usp=share_link"><img src="img3.jpg"></a>
-        <!-- advengers endgame -->
-				<a href="https://drive.google.com/file/d/16PQbXSXY3E9EDZmkpxlti04r7PZZUoCW/view?usp=share_link"><img src="img4.jpg"></a>
-        <!-- black panther wakanda forever -->
-				<a href="https://drive.google.com/file/d/18RBLHwqlat4BqHVYd7vXSbmicWHSLrUa/view?usp=share_link"><img src="img5.jpg"></a>
-        <!-- spiderman; into the spiderverse -->
-				<a href="https://drive.google.com/file/d/1X1iwq3djL9Vdgc6M6mLh0XF1gRiQtLx_/view?usp=share_link"><img src="img6.jpg"></a>
-        <!-- creed -->
-				<a href="https://drive.google.com/file/d/1Z4EcGzNZysoPSWUtyWcKfF-PlmRlfAaE/view?usp=share_link"><img src="img7.jpg"></a>
-        <!-- creed 2 -->
-				<a href="https://drive.google.com/file/d/1k910uTbP_zg88uEfK86vwwrrvUtIgD-t/view?usp=share_link"><img src="img8.jpg"></a>
-        <!-- cars 2 -->
-				<a href="https://drive.google.com/file/d/1heXBRzQQeRHQFodKwv1u0p1YbCHNpF2Y/view?usp=share_link"><img src="img9.jpg"></a>
-			</div>
-		</div>
+    <section class="style-cards">
+        <div class="card-1">
+            <div class="desc-1">
+                <h1 id="thjflixguide">How do I use THJFLIX?</h1>
+                <h4>1- Open this google doc - <u><a target="_blank" rel="noopener" href="https://docs.google.com/document/d/1qhQ6ZdmDQuvjBLDyiysNtcTnXwFAEm30X0hKXGhddq4/edit?usp=sharing">https://docs.google.com/document/d/thjflix</a></u></h4>
+              <br>
+  <h4>2- On the doc, search for a movie you'd like to watch</h4>
+              <br>
+  <h4>3- Find and copy the corresponding movie ID for the movie you'd like to watch</h4>
+              <br>
+  <h4>4- Paste the movie ID into the search bar up top and hit the watch button</h4>
+            </div>
+            <img src="tv.png" alt="Netflix TV">
+            <video class="video-1" autoplay="" playsinline="" muted="" loop=""><source src="1.m4v" type="video/mp4"></video>
+        </div>
+    </section>
 
-		<ul class="navigation">
-			<li class="active"><a href="#"><i class="fa-solid fa-house"></i></a></li>
-			<li><a href="#"><i class="fa-solid fa-fire"></i></a></li>
-			<li><a href="#"><i class="fa-solid fa-gamepad"></i></a></li>
-			<li><a href="#"><i class="fa-solid fa-user"></i></a></li>
-		</ul>
-	</section>
+  <!-- faq (not sure if needed) -->
+  
+    <section class="lastsec">
+        <div class="faq">
+            <!-- <h1>Frequently Asked Questions</h1>
+            <ul class="questions">
+                <li><a href="q1.html">What is THJFLIX?</a></li>
+                <li><a href="q2.html">How much does THJFLIX cost?</a></li>
+                <li><a href="q3.html">What can I watch on THJFLIX?</a></li>
+            </ul> -->
+            <p>Looking for a movie or a TV Show? Request one <u><a href="https://forms.gle/iaD7fV58sGT61EQ6A">here</a></u>.</p>
+          <br>
+          <br>
+          <br>
+  
+</section>
+
+
+
+    <!-- footer? not sure if needed either
+  
+  
+  <footer class="footer">
+        <p>Questions? Call 000-800-040-1843</p>
+    </footer>
+
+  -->
+
+  <!-- Default Statcounter code for THJFLIX
+https://thjflix.com -->
+<script type="text/javascript">
+var sc_project=12850156; 
+var sc_invisible=1; 
+var sc_security="7fdfc2c3"; 
+</script>
+<script type="text/javascript"
+src="https://www.statcounter.com/counter/counter.js"
+async></script>
+<noscript><div class="statcounter"><a title="real time web
+analytics" href="https://statcounter.com/"
+target="_blank"><img class="statcounter"
+src="https://c.statcounter.com/12850156/0/7fdfc2c3/1/"
+alt="real time web analytics"
+referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+<!-- End of Statcounter Code -->
+  
 </body>
 </html>
